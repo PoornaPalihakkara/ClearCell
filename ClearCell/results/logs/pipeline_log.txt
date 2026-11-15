@@ -1,0 +1,11 @@
+ClearCell Group Preprocessing Pipeline - Execution Log
+=======================================================
+Raw dataset shape       : (699, 11)
+Missing values imputed  : 16 (Bare_Nuclei, median=1.0)
+Target encoding         : 2->0 (Benign), 4->1 (Malignant)
+Outliers flagged        : 195 rows (90.3% malignant) - none removed
+Scaling applied         : StandardScaler on all 9 features
+Features retained       : 9 / 9 (all positively correlated with target)
+PCA (exploratory)       : PC1+PC2 = 74.1% variance
+Final processed shape   : (699, 20)
+Output file             : results/outputs/processed_breast_cancer.csv
