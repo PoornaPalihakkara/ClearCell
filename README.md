@@ -9,7 +9,7 @@ AI-assisted diagnostic support project that classifies breast tumour samples as 
 
 ## Group Members
 
-| Name                 | Preprocessing Role              | Model (Final Evaluation) |
+| Name                 | Preprocessing Role              | Model                    |
 |----------------------|---------------------------------|--------------------------|
 | Poorna Palihakkara (Me)|Dimensionality reduction (PCA) | Random Forest            |
 | Thanthrige P.D.I.    | Missing data handling           | MLP (Keras)              |
@@ -49,9 +49,8 @@ ClearCell/
 ├── data/
 │   ├── raw/                          # Assigned UCI dataset
 ├── notebooks/
-│   ├── preprocessing/                # Progress Review I (one notebook per member)
-│   └── models/                       # Final Evaluation (one model per member + comparison)
-├── group_pipeline.ipynb              # Integrated preprocessing pipeline
+│   ├── preprocessing/                # One notebook per member + integrated group preprocessing pipeline
+│   └── models/                       # One model per member + comparison
 ├── results/
 │   ├── eda_visualizations/           # EDA plots (PNG)
 │   ├── logs/                         # Pipeline execution log
@@ -64,7 +63,7 @@ ClearCell/
 
 ---
 
-## Progress Review - Preprocessing & EDA
+## Preprocessing & EDA
 
 Each member implemented one technique; all were integrated in `group_pipeline.ipynb`.
 
@@ -81,7 +80,7 @@ Each member implemented one technique; all were integrated in `group_pipeline.ip
 
 ---
 
-## Final Evaluation - Models
+## Models
 
 Each member trained **at least four varieties** of their model (baseline, manual tuning, GridSearchCV / architecture variants, scaled vs original features) with stratified train/test split and appropriate metrics.
 
@@ -102,7 +101,7 @@ Each member trained **at least four varieties** of their model (baseline, manual
 
 ## How to Run
 
-### 1. Preprocessing (Progress Review I)
+### 1. Preprocessing
 
 ```bash
 # Open and run any individual notebook under notebooks/preprocessing/
@@ -112,7 +111,7 @@ Each member trained **at least four varieties** of their model (baseline, manual
 
 Requires: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
 
-### 2. Models (Final Evaluation)
+### 2. Models
 
 ```bash
 # Open the relevant notebook under notebooks/models/
